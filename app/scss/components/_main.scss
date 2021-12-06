@@ -1,0 +1,98 @@
+@import '../abstracts/functions';
+
+.features{
+    margin: rem(140) 0 ;
+    text-align: center;
+    position: relative;
+    &__flex{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__diff{
+        font-size: $font-size*3;
+        font-weight: map-get($weight, bold );
+    }
+    &__card{
+        width: rem(325);
+        &--img{
+            margin: rem(42) 0;
+        }
+        &--pitch{
+            font-size: $font-size*1.5;
+            font-weight: map-get($weight, bold );
+        }
+        &--para{
+            margin: rem(18) 0;
+            line-height: 1.5;
+        }
+    }
+    @media screen and(min-width:$desktop) {
+        padding: 0 11vw;
+        text-align: left;
+        &__diff{
+            font-size: $font-size*4;
+        }
+        &__flex{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        &__card{
+            &--img{
+                margin: rem(100) 0 rem(42);
+            }
+        }
+    }
+}
+
+.more{
+    position: relative;
+    background-color: $dark-violet;
+    width: 87.200vw;
+    height: 87.200vw;
+    padding: rem(50) rem(30) ;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: $verylight-gray;
+    &__words, &__link{
+        text-align: center;
+        position: relative;
+        z-index: 10;
+    }
+    &__words{
+        font-size: $font-size*2.4;
+    }
+    &__link{
+
+
+    }
+    &__image{
+        position: absolute;
+        &-1, &-2{
+            z-index: 5;
+            top: 0;
+            right: 0;
+            pointer-events: none;
+        }
+        &-1{
+            width: 46.933vw;
+        }
+        &-2{
+            display: none;
+        }
+    }
+    @media screen and(min-width:$desktop) {
+        height: rem(250);
+        &__image{
+            &-1{
+               display: none;
+            }
+            &-2{
+                display: block;
+            }
+        }
+    }
+}

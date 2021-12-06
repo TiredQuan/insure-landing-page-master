@@ -1,0 +1,57 @@
+@use "sass:meta";
+@import 'functions';
+
+
+
+// # Front-end Style Guide
+
+// ## Layout
+
+// The designs were created to the following widths:
+
+
+// font-family: 'DM Serif Display', serif;
+// font-family: 'Karla', sans-serif;
+
+$desktop: 700px;
+
+// ## Colors
+
+// ### Primary
+
+$dark-violet: hsl(256, 26%, 20%);
+$grayish-blue: hsl(216, 30%, 68%);
+
+// ### Neutral
+
+$very-dark-violet: hsl(270, 9%, 17%);
+$dark-grayish-violet: hsl(273, 4%, 51%);
+$verylight-gray: hsl(0, 0%, 98%);
+
+// ## Typography
+
+// ### Body Copy
+
+$font-size: 16px;
+
+// ### Headings
+
+$weight: (
+    'regular':400,
+    'bold':700
+);
+// - Family: [DM Serif Display](https://fonts.google.com/specimen/DM+Serif+Display)
+// - Weights: 400
+
+// ### Body
+
+// - Family: [Karla](https://fonts.google.com/specimen/Karla)
+// - Weights: 400, 700
+
+// ## Icons
+
+// You can use either use the social icons provided or load in a font icon library. Some library suggestions can be found below:
+
+// - [Font Awesome](https://fontawesome.com)
+// - [IcoMoon](https://icomoon.io)
+// - [Ionicons](https://ionicons.com)
