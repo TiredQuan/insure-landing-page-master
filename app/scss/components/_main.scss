@@ -37,8 +37,11 @@
         &__flex{
             flex-direction: row;
             justify-content: space-between;
+            align-items: center;
+            gap: 30px;
         }
         &__card{
+            height: rem(350);
             &--img{
                 margin: rem(100) 0 rem(42);
             }
@@ -52,7 +55,7 @@
     width: 87.200vw;
     height: 87.200vw;
     padding: rem(50) rem(30) ;
-    margin: auto;
+    margin: 0 auto rem(140);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -63,10 +66,12 @@
         z-index: 10;
     }
     &__words{
-        font-size: $font-size*2.4;
+        font-size: 10.240vw;
+        width: 64vw;
+        margin: 0 auto;
     }
     &__link{
-
+        background-color: transparent;
 
     }
     &__image{
@@ -85,7 +90,22 @@
         }
     }
     @media screen and(min-width:$desktop) {
+        margin: 0 11.111vw rem(140);
+        padding:0 5.556vw;
         height: rem(250);
+        width: unset;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        &__words{
+            font-size: $font-size*3.5;
+            width: rem(500);
+            text-align: left;
+            margin: 0;
+        }
+        &__link{
+            margin: 0;
+        }
         &__image{
             &-1{
                display: none;

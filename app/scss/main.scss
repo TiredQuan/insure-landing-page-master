@@ -6,9 +6,6 @@
 @import 'base/reset';
 @import 'base/typography';
 
-@import 'components/header.scss';
-@import 'components/main.scss';
-@import 'components/footer.scss';
 
 
 .show{
@@ -16,7 +13,7 @@
 }
 .btn{
     display: block;
-    line-height: rem(34);
+    line-height: rem(36);
     margin: 0 auto;
     text-decoration: none;
     text-transform: uppercase;
@@ -24,7 +21,7 @@
     letter-spacing: 1px;
     width: rem(158);
     height: rem(38);
-    border: 2px solid $verylight-gray;
+    border: 1px solid $verylight-gray;
     background-color: $dark-violet;
     color: $verylight-gray;
     transition: all 0.3s ease;
@@ -60,3 +57,6 @@
         }
     }
 }
+@import 'components/header.scss';
+@import 'components/main.scss';
+@import 'components/footer.scss';

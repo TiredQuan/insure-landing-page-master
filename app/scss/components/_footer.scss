@@ -1,1 +1,93 @@
 @import '../abstracts/functions';
+
+.footer{
+    padding: rem(88) rem(20);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $verylight-gray;
+    position: relative;
+    &>*{
+        z-index: 5;
+    }
+    &__image{
+        position: absolute;
+        pointer-events: none;
+        z-index: 0;
+        top: 0;
+        &--mobile{
+            width: 100%;
+        }
+        &--desktop{
+            display: none;
+        }
+    }
+    @media screen and(min-width:$desktop) {
+        padding: rem(66) 11.111vw;
+        &__image{
+            &--mobile{
+                display: none;
+            }
+            &--desktop{
+                display: block;
+                left: 0;
+            }
+        }
+    }
+}
+.social{
+    width: 100%;
+    height: rem(115);
+    padding-bottom:rem(40);
+    border-bottom: 1px solid $dark-grayish-violet;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    &__link{
+        &>a{
+            margin: 0 rem(5);
+            &>img{
+            }
+        }
+    }
+    @media screen and(min-width:$desktop) {
+        height: fit-content;
+        flex-direction: row;
+    }
+}
+.links{
+    width: 100%;
+    &__group{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        &>*{
+            text-transform: uppercase;
+            font-weight: map-get($weight, bold );
+            font-size: $font-size*0.9;
+            text-align: center;
+        }
+        &--name{
+            color: $dark-grayish-violet;
+            margin: rem(31) 0;
+        }
+        &--link{
+            margin: rem(10) 0;
+            text-decoration: none;
+            color: $dark-violet;
+            &:hover{
+                text-decoration: underline
+            }
+        }
+    }
+    @media screen and(min-width:$desktop) {
+        display: flex;
+        justify-content: space-between;
+        &__group{
+            &>*{
+                text-align: left;
+            }
+        }
+    }
+}
