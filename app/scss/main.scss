@@ -18,6 +18,7 @@
     text-decoration: none;
     text-transform: uppercase;
     font-size: $font-size*0.9;
+    font-weight: map-get($weight, bold );
     letter-spacing: 1px;
     width: rem(158);
     height: rem(38);
